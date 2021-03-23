@@ -1,0 +1,7 @@
+1st STEP: 
+Starting from a 3d model in .stl format we want to perform a voxelization.
+
+STL FORMAT:
+An .stl file describe only the geometry of a 3d surface, without colors or textures attributes. The surface is discretized by triangles. In the .stl file is stored the information where each object is a triangle with 3 vertices and the facet normal.
+
+
