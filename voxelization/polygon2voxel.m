@@ -206,7 +206,7 @@ while(~isempty(VerticesA))
         
         [maxdist,maxindex] = max([dist1,dist2,dist3],[],2);
         
-        split = maxdist > 0.5;
+        split = maxdist > .5;
         m1 = maxindex == 1 & split;
         m2 = maxindex == 2 & split;
         m3 = maxindex == 3 & split;
