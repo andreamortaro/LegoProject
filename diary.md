@@ -1,5 +1,21 @@
 ## Diary
 
+- 2021.03.25 
+
+RECAP: .stl file --(stlread)-> fv triangulated mesh --(polygon2voxel)-> logical matrix --(voxelPlotter)-> plot voxelized image
+Investigate how to pass from the triangulated mesh to the voxelized volume.
+
+We tried [Mesh voxelisation](https://it.mathworks.com/matlabcentral/fileexchange/27390-mesh-voxelisation) on Matlab: we were able to change the size of voxels, but we didn't understood how the algorithm works and using larger voxels the output is terrible.
+
+Some useful tools for manipulating binary volume objects:
+https://it.mathworks.com/help/images/ref/bwselect3.html?searchHighlight=voxelization&s_tid=srchtitle
+https://it.mathworks.com/help/vision/ref/pcmapndt.html?searchHighlight=voxelization&s_tid=srchtitle
+https://it.mathworks.com/help/images/ref/bwmorph3.html?searchHighlight=voxel&s_tid=srchtitle
+https://it.mathworks.com/help/images/3d-volumetric-image-processing.html?s_tid=CRUX_lftnav
+
+We cannot find any comprehensible algorithm for voxelization...
+
+
 - 2021.03.24 Voxelization
 
 In Matlab we use [STL file Reader](https://it.mathworks.com/matlabcentral/fileexchange/22409-stl-file-reader?s_tid=srchtitle) to obtain a set of points from a .stl file. Now we want to perform the voxelization.
