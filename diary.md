@@ -1,5 +1,16 @@
 ## Diary
 
+- 2021.03.26
+
+Look at:
+PyMesh -> voxelize.py (it does not output a logical matrix, but another mesh with voxels)
+gptoolbox (Matlab) 
+trimesh (Python)
+
+IDEA for simple implementation of a voxelization algorithm: for every cube check if it intersects with the surface (triangles of the mesh). If yes, then voxel=1, else voxel=0.
+Another idea: check how many vertices inside the surfaces...
+
+
 - 2021.03.25 
 
 RECAP: .stl file --(stlread)-> fv triangulated mesh --(polygon2voxel)-> logical matrix --(voxelPlotter)-> plot voxelized image
