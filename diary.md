@@ -1,5 +1,17 @@
 ## Diary
 
+2021.03.28
+
+
+
+First attempt to install gptoolbox for matlab: voxelize.m gives an error but we don't know the reason.
+
+We tried previous functions in matlab with other stl models, and we found out some problems:
+1. optimal angle with axis to perform a better voxelization?
+2. we can't control properly the size and number of voxel
+
+we are going to try again with gptoolbox tomorrow, now it's too late and we are frustrated.
+
 - 2021.03.26
 
 Look at:
