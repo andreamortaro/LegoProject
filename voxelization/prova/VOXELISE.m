@@ -1,4 +1,4 @@
-function [gridOUTPUT,varargout] = VOXELISE(gridX,gridY,gridZ,varargin)
+ffunction [gridOUTPUT,varargout] = VOXELISE(gridX,gridY,gridZ,varargin)
 % VOXELISE  Voxelise a 3D triangular-polygon mesh.
 %==========================================================================
 % AUTHOR        Adam H. Aitkenhead
