@@ -1,8 +1,12 @@
 # Diary
 
-## 2021.04.06
+## 2021.04.07
 
+We converted the *struct* `fv` into the `PointCloud` class object which gives us the possibility to compute the normals to each triangle. We also started reasoning about the optimal angle for the voxelization in order to avoid "aliasing". 
 
+**Idea:** minmize the area projected on a plane parallel to z axis, which is equivalent (maybe) to maximize the number of triangles with normal parallel to the above plane...
+
+*Implementation (try and error):* we start rotating the mesh and for every angle we compute the projected area on the plane, then we take the best angle. We could rotate the plane instead of the mesh (maybe it is more efficient). There could be a way to find the optimal angle by just looking at the normals: we could project just the normals and take the sum of the lengths of each projected normal. The largest sum corresponds to the optimal angle (?)
 
 ## 2021.04.05
 
